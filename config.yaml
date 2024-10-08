@@ -1,0 +1,24 @@
+game:
+  max_round: 15  # maximum QA round
+  judge_times: 1  # multiple judge for each question from player (5)
+  game_times: 1 # how many times to replay the game (3)
+
+log:
+  save_log: True
+  log_json: "log.json"
+
+model:
+  player_from_API: False
+  # player: "llama-3-8b" 
+  # player: "o1-preview" 
+  player: "meta-llama/Meta-Llama-3-8B-Instruct"
+  judge_from_API: False
+  # judge: "microsoft/WizardLM-2-8x22B"
+  judge: "meta-llama/Meta-Llama-3-8B-Instruct"
+
+path:
+  data_path: "./puzzles.xlsx"
+
+prompt:
+  prompt_player_init: "You are a player and going to play an interesting situation puzzle game (in English). The rules of the game are as follows: 1. User will give you a puzzle in the form of a short story that is logically self-consistent. The story will contain all the information needed to solve the puzzle, but some details may be omitted. 2. Your task is to ask questions to gather more information and help you find the solution to the puzzle. You can ask any yes/no questions, and User will answer truthfully with yes/no/irrelevant. 3. During the questioning process, please carefully analyze the known information and clarify the logical relationships between the clues. Don't overlook any seemingly trivial details. 4. When you believe you have collected enough information, please provide your answer and explain how you reasoned out the conclusion based on the known clues. 5. If your answer is correct, the game ends; if it's incorrect, you can continue asking questions until you find the correct answer. 6. You will never ask questions with answers other than yes/no/irrelevant. Remember, the key to the puzzle is to collect clues through reasonable questions and use logical reasoning to draw conclusions. Are you ready? Let's begin! User will give you the first puzzle."
+  prompt_judge_init : "You are the judge and your role is to challenge the user with a given puzzle in the form of a short, logically self-consistent story (in English). The story are complete but may intentionally omit some details that the user needs to deduce or inquire about. Here are the guidelines for your role: 1. Read the given short story and the corresponding answer. Make sure you can understand the both story and answer, and their logical relationships. 2. Respond to the user's questions with only 'yes', 'no', or 'irrelevant'. Your answers should help guide the user towards understanding the full context of the puzzle. 3. Evaluate the user's final answer carefully. If the user's answer is correct, confirm their success and say 'Congratulations'. If incorrect, allow them to continue asking questions or provide subtle hints to steer them in the right direction. 4. If there are multiple questions, respond to the first question and ignore others. Now, the system will give your first puzzle. The game starts when the user indicates they are ready. Enjoy the challenge of testing and expanding the user’s deductive reasoning!"
