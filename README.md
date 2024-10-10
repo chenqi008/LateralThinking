@@ -1,14 +1,14 @@
 
 ## Lateral Thinking
 
-[![paper](https://img.shields.io/badge/cs.AI-2312.02439-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2312.02439)
+[![paper](https://img.shields.io/badge/cs.CL-2410.06733-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2410.06733)
 
 <p align="center">
   <img src="./image/splat.png" width="150" height="150">  <img src="./image/splat2.png" width="400" height="120"> 
 
 </p>
 
-This repository is the official codebase of **"Weak-eval-Strong: Evaluating and Eliciting Lateral Thinking of LLMs with Situation Puzzles"** [[paper]](https://arxiv.xxx). Our paper has been accepted at the Conference on Neural Information Processing Systems 2024 (NeurIPS 2024).
+This repository is the official codebase of **"Weak-eval-Strong: Evaluating and Eliciting Lateral Thinking of LLMs with Situation Puzzles"** [[paper]](https://arxiv.org/pdf/2410.06733). Our paper has been accepted at the Conference on Neural Information Processing Systems 2024 (NeurIPS 2024).
 
 ## Introduction
 
