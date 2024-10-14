@@ -144,5 +144,13 @@ client = AsyncOpenAI(
 
 
 ## Citation
+```shell
+@article{chen2024weak,
+  title={Weak-eval-Strong: Evaluating and Eliciting Lateral Thinking of LLMs with Situation Puzzles},
+  author={Chen, Qi and Zhang, Bowen and Wang, Gang and Wu, Qi},
+  journal={Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2024}
+}
+```
 
 
